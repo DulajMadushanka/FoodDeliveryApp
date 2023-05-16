@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66" height="66" viewBox="0 0 66 66">
+  <defs>
+    <filter id="Rectangle_2780" x="0" y="0" width="66" height="66" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4.5" result="blur"/>
+      <feFlood flood-color="#006d77" flood-opacity="0.988"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2620" data-name="Group 2620" transform="translate(-565.5 -366.5)">
+    <g transform="matrix(1, 0, 0, 1, 565.5, 366.5)" filter="url(#Rectangle_2780)">
+      <rect id="Rectangle_2780-2" data-name="Rectangle 2780" width="39" height="39" rx="8" transform="translate(12.5 12.5)" fill="rgba(42,157,143,0.06)"/>
+    </g>
+    <g id="Group_2619" data-name="Group 2619" transform="translate(-58 40.343)">
+      <path id="Path_3442" data-name="Path 3442" d="M24.136,113.394A4.767,4.767,0,1,1,20.765,112,4.761,4.761,0,0,1,24.136,113.394Zm0,0" transform="translate(630.4 240.86)" fill="#6aabb0" stroke="#6aabb0" stroke-width="1"/>
+      <g id="gender" transform="translate(645 347.657)">
+        <path id="Path_3440" data-name="Path 3440" d="M5.123,101.463v2.669H3.2a.64.64,0,1,0,0,1.281H5.123v1.964a.64.64,0,0,0,1.281,0v-1.964H8.325a.64.64,0,1,0,0-1.281H6.4v-2.666a6.137,6.137,0,0,0,1.264-.287,7.106,7.106,0,0,1-1-1.024,4.483,4.483,0,1,1-.9-8.874,4.543,4.543,0,0,1,4.483,4.483,4.425,4.425,0,0,1-.519,2.049,3.2,3.2,0,0,0,1.014.8,5.7,5.7,0,0,0,.785-2.852A5.764,5.764,0,0,0,0,95.764,5.751,5.751,0,0,0,5.123,101.463Z" transform="translate(0 -86.158)" fill="#6aabb0"/>
+        <path id="Path_3441" data-name="Path 3441" d="M164.815,0h-3.842a.64.64,0,1,0,0,1.281h2.3l-3.928,3.842a5.549,5.549,0,0,0-5.482-.932,7.105,7.105,0,0,1,1,1.024,4.483,4.483,0,1,1,.9,8.874,4.539,4.539,0,0,1-4.483-4.483,4.425,4.425,0,0,1,.519-2.049,3.2,3.2,0,0,0-1.014-.8A5.7,5.7,0,0,0,150,9.606a5.836,5.836,0,0,0,5.764,5.764,5.77,5.77,0,0,0,5.764-5.764,5.706,5.706,0,0,0-1.281-3.578l3.928-3.842v2.3a.64.64,0,0,0,1.281,0V.64a.643.643,0,0,0-.64-.64Z" transform="translate(-143.596)" fill="#6aabb0"/>
+      </g>
+      <path id="Path_3443" data-name="Path 3443" d="M24.649,113.482A5.068,5.068,0,1,1,21.065,112,5.061,5.061,0,0,1,24.649,113.482Zm0,0" transform="translate(635.595 239.839)" fill="#6aabb0" stroke="#6aabb0" stroke-width="0.5"/>
+    </g>
+  </g>
+</svg>

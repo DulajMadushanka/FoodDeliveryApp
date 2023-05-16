@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="61" height="61" viewBox="0 0 61 61">
+  <defs>
+    <filter id="Rectangle_841" x="0" y="0" width="61" height="61" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_16" data-name="Group 16" transform="translate(-79 -125)">
+    <g transform="matrix(1, 0, 0, 1, 79, 125)" filter="url(#Rectangle_841)">
+      <rect id="Rectangle_841-2" data-name="Rectangle 841" width="43" height="43" rx="15" transform="translate(9 6)" fill="#333b45"/>
+    </g>
+    <g id="Icon_feather-arrow-left" data-name="Icon feather-arrow-left" transform="translate(94.5 137.5)">
+      <path id="Path_961" data-name="Path 961" d="M22.727,18H7.5" transform="translate(0 -2.886)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_962" data-name="Path 962" d="M15.114,22.727,7.5,15.114,15.114,7.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

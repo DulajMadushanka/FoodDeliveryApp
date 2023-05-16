@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="71.463" height="71.463" viewBox="0 0 71.463 71.463">
+  <g id="Group_1819" data-name="Group 1819" transform="translate(-152 -117)">
+    <g id="Group_1385" data-name="Group 1385" transform="translate(0.231 12)">
+      <g id="check" transform="translate(152.768 106)">
+        <path id="Path_1877" data-name="Path 1877" d="M34.732,0A34.731,34.731,0,1,1,0,34.732H0A34.632,34.632,0,0,1,34.534,0Z" transform="translate(0)" fill="#54d672"/>
+        <path id="Path_1878" data-name="Path 1878" d="M120.506,109.493,95.839,134.16,82.025,120.446l5.624-5.525,8.189,8.091,19.043-19.043Z" transform="translate(-66.534 -84.333)" fill="#fff"/>
+      </g>
+      <g id="check-2" data-name="check" transform="translate(152.768 106)">
+        <path id="Path_1877-2" data-name="Path 1877" d="M34.732,0A34.731,34.731,0,1,1,0,34.732H0A34.632,34.632,0,0,1,34.534,0Z" transform="translate(0)" fill="none" stroke="#fff" stroke-width="2"/>
+        <path id="Path_1878-2" data-name="Path 1878" d="M120.506,109.493,95.839,134.16,82.025,120.446l5.624-5.525,8.189,8.091,19.043-19.043Z" transform="translate(-66.534 -84.333)" fill="none" stroke="#fff" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="check-3" data-name="check" transform="translate(153 118)">
+      <path id="Path_1877-3" data-name="Path 1877" d="M34.732,0A34.731,34.731,0,1,1,0,34.732H0A34.632,34.632,0,0,1,34.534,0Z" transform="translate(0)" fill="none" stroke="#fff" stroke-width="2"/>
+      <path id="Path_1878-3" data-name="Path 1878" d="M120.506,109.493,95.839,134.16,82.025,120.446l5.624-5.525,8.189,8.091,19.043-19.043Z" transform="translate(-66.534 -84.333)" fill="none" stroke="#fff" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
