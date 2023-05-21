@@ -10,7 +10,8 @@ export const colors = {
   cardComment: '#86939e',
   cardBackground: '#ffffff',
   statusbar: '#ff8c52',
-  headerText: '#ffffff'
+  headerText: '#ffffff',
+  lightgreen: '#66DF48'
 };
 
 export const parameters = {

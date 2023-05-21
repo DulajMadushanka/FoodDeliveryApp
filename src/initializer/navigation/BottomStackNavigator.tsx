@@ -11,67 +11,106 @@ import styles from './styles';
 import BottomComponent from '../components/navigation/BottomComponent';
 import {navigate} from "../repositories/Repository";
 import HomeView from '../../screens/homeScreen/HomeScreen';
+import SearchScreen from '../../screens/SearchScreen';
+import MyOrderScreen from '../../screens/order/MyOrderScreen';
+import ProfileScreen from '../../screens/profile/ProfileScreen';
+import {Icon} from "react-native-elements";
+import {colors} from "../../global/styles";
+import HomeStackNavigator from '../navigation/HomeStackNavigator';
 
 const TabBarComponent = (props) => (<BottomTabBar {...props} />);
 
 export default createBottomTabNavigator(
   {
     HomeScreen: {
-      screen: HomeView,
+      screen: HomeStackNavigator,
       navigationOptions: () => ({
         title: '',
-        tabBarIcon: ({tintColor}) => (
-          <View style={styles.bottomScreenContainer}>
-            {tintColor === BaseColors.blueText ? (
-              <View style={styles.selectedIconContainer}>
-                <HomeSelect/>
-              </View>
-            ) : (
-              <Home />
-            )}
-          </View>
+        tabBarIcon: ({tintColor, color, size}) => {
+          console.log("+++++++++++++++++++, tintColor", tintColor)
+          return (
+            <Icon
+              name={"home"}
+              type={"material"}
+              color={tintColor}
+              size={size}
+            />
+          )
+        },
+      }),
+    },
+    SearchScreen: {
+      screen: SearchScreen,
+      navigationOptions: () => ({
+        title: '',
+        tabBarIcon: ({tintColor, color, size}) => (
+          <Icon
+            name={"search"}
+            type={"material"}
+            color={tintColor}
+            size={size}
+          />
         ),
       }),
     },
-    FeedsScreen: {
-      screen: HomeView,
+    MyOrderScreen: {
+      screen: MyOrderScreen,
       navigationOptions: () => ({
         title: '',
-        tabBarIcon: ({tintColor}) => (
-          <View style={styles.bottomScreenContainer}>
-            {tintColor === BaseColors.blueText ? (
-              <View style={styles.selectedIconContainer}>
-                <FeedSelect/>
-              </View>
-            ) : (
-              <Feed />
-            )}
-          </View>
+        tabBarIcon: ({tintColor, color, size}) => (
+          <Icon
+            name={"view-list"}
+            type={"material"}
+            color={tintColor}
+            size={size}
+          />
+        ),
+      }),
+    },
+    ProfileScreen: {
+      screen: ProfileScreen,
+      navigationOptions: () => ({
+        title: '',
+        tabBarIcon: ({tintColor, color, size}) => (
+          <Icon
+            name={"person"}
+            type={"material"}
+            color={tintColor}
+            size={size}
+          />
         ),
       }),
     }
   },
   {
-    tabBarComponent: props => (
-      <BottomComponent {...props} />
-    ),
     tabBarOptions: {
-      activeTintColor: BaseColors.blueText,
-      inactiveTintColor: BaseColors.defaultText,
+      activeTintColor: colors.buttons,
+      inactiveTintColor: colors.grey1,
+      tabStyle: {
+        backgroundColor: 'transparent',
+        borderTopLeftRadius: 16,
+        borderBottomLeftRadius: 16,
+      },
       style: {
-        backgroundColor: '#FFFFFF',
+        shadowColor: 'rgba(91, 101, 184, 0.08)',
+        bottom: 0,
+        left: 0,
+        width: '100%',
+        backgroundColor: '#ffffff',
+        borderTopLeftRadius: 8,
+        borderTopRightRadius: 8,
         borderTopWidth: 0,
-        borderTopLeftRadius: relativeWidth(16),
-        borderTopRightRadius: relativeWidth(16),
-        shadowColor: 'rgba(0, 0, 0, 0.08)',
+        paddingTop: relativeHeight(20),
+        height: 55,
+        elevation: 50,
+        //borderRadius: 8,
         shadowOffset: {
-          width: 5,
-          height: 0,
+          width: 0,
+          height: -6,
         },
-        elevation: 2,
-        shadowRadius: relativeWidth(10),
+        shadowRadius: 10,
         shadowOpacity: 1,
-        height: relativeHeight(40)
+        zIndex: -10,
       },
     },
 

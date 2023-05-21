@@ -11,15 +11,6 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		25D863872A097F9700D7A6FB /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25D863752A097DEC00D7A6FB /* Gilroy-Bold.ttf */; };
-		25D863882A097F9700D7A6FB /* amerigo-bold-bt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25D8637B2A097E0B00D7A6FB /* amerigo-bold-bt.ttf */; };
-		25D863892A097F9700D7A6FB /* Gilroy-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25D863762A097E0B00D7A6FB /* Gilroy-ExtraBold.otf */; };
-		25D8638A2A097F9700D7A6FB /* Gilroy-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25D8637C2A097E0B00D7A6FB /* Gilroy-Light.ttf */; };
-		25D8638B2A097F9700D7A6FB /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25D863772A097E0B00D7A6FB /* Gilroy-Medium.ttf */; };
-		25D8638C2A097F9700D7A6FB /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25D8637D2A097E0B00D7A6FB /* Gilroy-Regular.ttf */; };
-		25D8638D2A097F9700D7A6FB /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25D8637A2A097E0B00D7A6FB /* Nunito-Bold.ttf */; };
-		25D8638E2A097F9700D7A6FB /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25D863792A097E0B00D7A6FB /* Nunito-Regular.ttf */; };
-		25D8638F2A097F9700D7A6FB /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25D863782A097E0B00D7A6FB /* Nunito-SemiBold.ttf */; };
 		6C7DC95A0ED73F2269D9D48A /* libPods-FoodDeliveryApp-FoodDeliveryAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F82B32B46F4C16DC37CBCC49 /* libPods-FoodDeliveryApp-FoodDeliveryAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		D7C3C54EA7F67FCB072B9DBA /* libPods-FoodDeliveryApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FBD6DE827F48B3D68F73A1A /* libPods-FoodDeliveryApp.a */; };
@@ -307,15 +298,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25D863872A097F9700D7A6FB /* Gilroy-Bold.ttf in Resources */,
-				25D863882A097F9700D7A6FB /* amerigo-bold-bt.ttf in Resources */,
-				25D863892A097F9700D7A6FB /* Gilroy-ExtraBold.otf in Resources */,
-				25D8638A2A097F9700D7A6FB /* Gilroy-Light.ttf in Resources */,
-				25D8638B2A097F9700D7A6FB /* Gilroy-Medium.ttf in Resources */,
-				25D8638C2A097F9700D7A6FB /* Gilroy-Regular.ttf in Resources */,
-				25D8638D2A097F9700D7A6FB /* Nunito-Bold.ttf in Resources */,
-				25D8638E2A097F9700D7A6FB /* Nunito-Regular.ttf in Resources */,
-				25D8638F2A097F9700D7A6FB /* Nunito-SemiBold.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);

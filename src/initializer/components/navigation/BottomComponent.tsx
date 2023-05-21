@@ -11,7 +11,7 @@ import Map from '../../../../assets/images/icons/place-icon.svg';
 import BookingsSelect from '../../../../assets/images/icons/calendar-selected-icon.svg';
 import Bookings from '../../../../assets/images/icons/calendar-icon.svg';
 import Actions from '../../../initializer/modules/Actions';
-import {navigate} from "../../../initializer/repositories/Repository";
+import {navigate} from "../../../initializer/services/NavigationService";
 
 const BottomComponent = (props) => {
   const {selectTabView, selectedBottomTab } = props;
@@ -20,7 +20,7 @@ const BottomComponent = (props) => {
     <View style={styles.bottomViewContainer}>
      <View style={styles.bottomComponentContainer}>
        <View style={styles.bottomComponentView}>
-         <TouchableOpacity onPress={() => selectTabView("HOME", "HomeScreen")}>
+         <TouchableOpacity onPress={() => {}}>
            {selectedBottomTab === "HOME" ? (
              <View style={styles.selectedIconContainer}>
                <HomeSelect/>
@@ -29,7 +29,7 @@ const BottomComponent = (props) => {
              <Home />
            )}
          </TouchableOpacity>
-         <TouchableOpacity onPress={() => selectTabView("FEED", "FeedsScreen")}>
+         <TouchableOpacity onPress={() =>  navigate("SearchScreen", {})}>
            {selectedBottomTab === "FEED" ? (
              <View style={styles.selectedIconContainer}>
                <FeedSelect/>
@@ -38,7 +38,7 @@ const BottomComponent = (props) => {
              <Feed />
            )}
          </TouchableOpacity>
-         <TouchableOpacity onPress={() => selectTabView("APPOINTMENT", "AccountScreen")}>
+         <TouchableOpacity onPress={() => {}}>
            {selectedBottomTab === "APPOINTMENT" ? (
              <View style={styles.selectedIconContainer}>
                <BookingsSelect />
@@ -47,7 +47,7 @@ const BottomComponent = (props) => {
              <Bookings />
            )}
          </TouchableOpacity>
-         <TouchableOpacity onPress={() => selectTabView("LOCATION", "LocationScreen")}>
+         <TouchableOpacity onPress={() => {}}>
            {selectedBottomTab === "LOCATION" ? (
              <View style={styles.selectedIconContainer}>
                <MapSelect />
@@ -57,11 +57,6 @@ const BottomComponent = (props) => {
            )}
          </TouchableOpacity>
        </View>
-       <TouchableOpacity onPress={() => navigate('SearchSalonScreen', {isBottom: true})}  style={styles.bottomComponentBookNowBtn}>
-         <Text style={styles.bottomComponentBookNowBtnText}>
-           Book Now
-         </Text>
-       </TouchableOpacity>
      </View>
     </View>
   );

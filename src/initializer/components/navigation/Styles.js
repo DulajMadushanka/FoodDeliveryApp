@@ -59,6 +59,6 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     flexDirection: 'row',
-    width: '60%'
+    width: '100%'
   }
 });

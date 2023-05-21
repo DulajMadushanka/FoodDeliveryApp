@@ -5,25 +5,20 @@ import {createStackNavigator} from 'react-navigation-stack';
 import SplashView from '../../modules/login/views/SplashView';
 import SignInWelcomeScreen from '../../screens/authScreens/SignInWelcomeScreen';
 import SignInScreen from '../../screens/authScreens/SignInScreen';
+import HomeView from '../../screens/homeScreen/HomeScreen';
+import RestaurantMapView from '../../screens/RestaurantMapScreen';
 
-export default createStackNavigator(
+const HomeStack = createStackNavigator(
   {
-    SplashScreen: {
-      screen: SplashView,
+    HomeScreen: {
+      screen: HomeView,
       navigationOptions: ({navigation}) => ({
         title: '',
         headerStyle: styles.headerStyle,
       }),
     },
-    SignInWelcomeScreen: {
-      screen: SignInWelcomeScreen,
-      navigationOptions: ({navigation}) => ({
-        title: '',
-        headerStyle: styles.headerStyle,
-      }),
-    },
-    SignInScreen: {
-      screen: SignInScreen,
+    RestaurantMapScreen: {
+      screen: RestaurantMapView,
       navigationOptions: ({navigation}) => ({
         title: '',
         headerStyle: styles.headerStyle,
@@ -31,13 +26,29 @@ export default createStackNavigator(
     },
   },
   {
-    initialRouteName: 'SplashScreen',
+    initialRouteName: 'HomeScreen',
     headerMode: 'none',
     navigationOptions: {
       headerVisible: false,
     },
   },
 );
+
+export default HomeStack;
+
+HomeStack.navigationOptions = ({ navigation }) => {
+  let tabBarVisible;
+  if (navigation.state.routes.length > 1) {
+    navigation.state.routes.map(route => {
+      if (route.routeName === 'HomeScreen') {
+        tabBarVisible = true;
+      } else {
+        tabBarVisible = false;
+      }
+    });
+  }
+  return {tabBarVisible};
+};
 
 const styles = StyleSheet.create({
   icon2: {
